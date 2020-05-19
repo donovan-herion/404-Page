@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    background-color: #191526;
+}
+
+.flex-container {
+    margin: 0 auto;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    width: 80%;
+    animation-name: Animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+h1 {
+    height: 20px;
+    color: white;
+    font-family: 'Patrick Hand';
+    font-size: 40px;
+    margin-top: 5vh;
+    }
+
+h2 {
+    color: white;
+    font-family: 'Patrick Hand';
+    font-size: 25px;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    height: 5%;
+    margin-top: 3vh;
+    background-color: #523C7A;
+    border: 3px solid white;
+    border-radius: 25px;
+    font-family: 'Patrick Hand';
+    font-size: 20px;
+    color: white;
+}
+
+.button:hover {
+    background-color: #55539F;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    img {
+        margin-top: 15vh;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 15px;
+        height: 20px;
+        width: 100px
+    }
+}
